@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Map | Campus Life</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Shared campus navigation -->
+  <header>
+    <nav class="container campus-nav" aria-label="Main navigation">
+      <strong>Campus Life</strong>
+      <a href="index.html">Home</a>
+      <a href="dining.html">Dining</a>
+      <a href="map.html" aria-current="page">Campus Map</a>
+    </nav>
+  </header>
+  <main class="container py-4">
+    <h1>Find your way around</h1>
+    <!-- The map and location list use the campus as a reference point. -->
+    <div class="row g-3">
+      <section class="col-md-8">
+        <h2>Campus map</h2>
+        <iframe title="Map of the University of Lynchburg area" class="campus-map" loading="lazy"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-79.187%2C37.396%2C-79.173%2C37.408&amp;layer=mapnik"></iframe>
+      </section>
+      <section class="col-md-4"><div class="panel">
+        <h2>Campus locations</h2>
+        <ol>
+          <li>Burton Dining Hall (Drysdale Student Center)</li>
+          <li>Knight-Capron Library</li>
+          <li>Drysdale Student Center</li>
+        </ol>
+      </div></section>
+    </div>
+  </main>
+  <footer class="container py-3"><a href="https://www.lynchburg.edu/">University of Lynchburg</a></footer>
+</body>
+</html>
